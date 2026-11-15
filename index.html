@@ -45,6 +45,7 @@
     a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
     a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
     [id] { scroll-margin-top: 1rem; }
+    .updated { color: var(--muted); font-size: .92rem; }
   </style>
 </head>
 <body>
@@ -54,60 +55,83 @@
       <nav aria-label="Policy language">
         <a href="#english">English</a>
         <a href="#turkce" lang="tr">Türkçe</a>
+        <a href="terms/">Terms · Koşullar</a>
       </nav>
     </div>
   </header>
   <main class="wrap">
     <article id="english" aria-labelledby="english-title">
       <h1 id="english-title">Magnet Shift Privacy Policy</h1>
+      <p class="updated">Last updated: 15 November 2026</p>
       <p class="intro">This policy explains how Yui Games and its service providers handle information in the Android version of Magnet Shift, also listed in Turkish as Atölye: Magnet Shift.</p>
 
+      <h2>No account needed</h2>
+      <p>You play Magnet Shift without signing in. The game does not ask for your name, email address, or phone number, and Yui Games does not run its own server for player data.</p>
+
       <h2>Game profile and progress</h2>
-      <p>Magnet Shift saves your chosen player name and avatar, game progress, in-game balances, and settings such as language and sound on your device so you can continue playing. Your Android settings may allow these records to be included in a device backup.</p>
+      <p>Magnet Shift saves your chosen player name and avatar, game progress, in-game balances, whether you bought Remove Ads, and settings such as language and sound on your device. These records stay on your device; Yui Games does not receive them. Your Android settings may allow them to be included in a device backup.</p>
 
       <h2>Advertising</h2>
-      <p>Magnet Shift uses Google AdMob to display ads, including optional rewarded ads and ads between levels. The advertising SDK may send Google and its advertising partners your IP address, which can be used to estimate your approximate location, along with device identifiers such as your Android advertising ID or app set ID, app and ad interactions, and diagnostic information. These data are used to deliver and measure ads, personalize ads where applicable, and prevent fraud and abuse. The SDK encrypts data in transit.</p>
-      <p>We use Google’s User Messaging Platform (UMP) to present advertising consent choices when applicable. You can also manage your advertising ID in Android settings.</p>
+      <p>Magnet Shift uses Google AdMob to display ads, including optional rewarded ads and ads between levels. The advertising SDK may send Google and its advertising partners your IP address, which can be used to estimate your approximate location, along with device identifiers such as your Android advertising ID or app set ID, app and ad interactions, crash logs, and diagnostic information. These data are used to deliver and measure ads, personalize ads where applicable, and prevent fraud and abuse. The SDK encrypts data in transit.</p>
+      <p>We use Google’s User Messaging Platform (UMP) to present advertising consent choices when applicable. You can also reset or delete your advertising ID in Android settings.</p>
       <p class="links"><a href="https://policies.google.com/technologies/partner-sites?hl=en">How Google uses information from apps</a> · <a href="https://policies.google.com/technologies/retention?hl=en">Google’s data retention practices</a></p>
 
-      <h2>In-app purchases</h2>
-      <p>Google Play processes payments for in-game nut packs. Yui Games does not receive your card or bank account details. The game receives purchase information from Google Play, such as the product, quantity, transaction identifier, and receipt or purchase token. We use this information to verify purchases, credit the purchased items, avoid duplicate credits, and resolve transaction issues.</p>
-      <p>The game uses Unity In-App Purchasing for the purchase flow. When a purchase flow runs, Unity may process product and transaction information, app and device identifiers, device and operating system details, and country inferred from IP address to operate the service and report revenue. Unity encrypts the data it collects in transit.</p>
-      <p class="links"><a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview">Unity In-App Purchasing privacy information</a></p>
+      <h2>In-app purchase: Remove Ads</h2>
+      <p>You can buy Remove Ads once to turn off the ads shown between levels. Rewarded ads stay available because you choose to watch them. Google Play processes the payment; Yui Games does not receive your card or bank account details. The game asks Google Play on your device whether your Google account owns Remove Ads, so the purchase comes back after you reinstall the game. If Google Play refunds or revokes the purchase, ads between levels return.</p>
+      <p>The game uses Unity In-App Purchasing for the purchase flow. Unity may process your approximate location (country), app and device identifiers, purchase history, crash logs, and diagnostic and performance information to operate the purchase service and for analytics. Unity does not share these data with third parties for advertising and encrypts them in transit.</p>
+      <p class="links"><a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a> · <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview">Unity In-App Purchasing privacy information</a> · <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a></p>
 
-      <h2>Support and privacy requests</h2>
-      <p>If you contact us by email, Yui Games uses your email address, message, and any details you choose to share to respond and resolve your request. You can use the same address to ask about your data or request access, correction, or deletion where applicable.</p>
-      <p><a href="mailto:yui.games.dev@gmail.com">yui.games.dev@gmail.com</a></p>
+      <h2>Children</h2>
+      <p>Magnet Shift is suitable for players of all ages, but it is not specifically designed for children under 13.</p>
+
+      <section id="support" aria-labelledby="support-title">
+        <h2 id="support-title">Support and privacy requests</h2>
+        <p>For help with the game or a purchase, or to ask about your data, email us. Yui Games uses your email address, message, and any details you choose to share only to respond and resolve your request.</p>
+        <p><a href="mailto:yui.games.dev@gmail.com?subject=Magnet%20Shift">yui.games.dev@gmail.com</a></p>
+      </section>
 
       <h2>Retention and deletion</h2>
-      <p>Local game records remain on your device until you clear Magnet Shift’s storage in Android settings or uninstall the game. This can remove your progress and balances. You can manage any device backups separately in your Android settings.</p>
-      <p>We keep purchase records for as long as needed to verify transactions, prevent duplicate credits, resolve refunds and disputes, and meet any applicable recordkeeping obligations. We keep support messages for as long as needed to handle the request and follow-up, or longer when required by law. Google and Unity manage the data they hold under their respective retention policies. For records held by Yui Games, you can send a deletion request to the email address above.</p>
+      <p>Local game records remain on your device until you clear Magnet Shift’s storage in Android settings or uninstall the game. This removes your progress and settings; a Remove Ads purchase is restored by Google Play. You can manage device backups in your Android settings. Google and Unity keep the data they process under their own retention policies; you can request deletion from them through the links above. We keep support emails only as long as needed to handle your request, or longer when required by law, and you can ask us to delete them.</p>
+
+      <h2>Changes</h2>
+      <p>If the game starts to collect or use information differently, for example by adding optional sign-in, we will update this policy and the date above before that version is released.</p>
     </article>
 
     <article id="turkce" lang="tr" aria-labelledby="turkce-baslik">
       <h2 id="turkce-baslik" class="policy-title">Magnet Shift Gizlilik Politikası</h2>
+      <p class="updated">Son güncelleme: 15 Kasım 2026</p>
       <p class="intro">Bu politika, Türkçe mağaza adı Atölye: Magnet Shift olan oyunun Android sürümünde Yui Games’in ve hizmet sağlayıcılarının verileri nasıl işlediğini açıklar.</p>
 
+      <h3>Hesap gerekmez</h3>
+      <p>Magnet Shift’i giriş yapmadan oynarsınız. Oyun adınızı, e-posta adresinizi veya telefon numaranızı istemez ve Yui Games oyuncu verileri için kendi sunucusunu kullanmaz.</p>
+
       <h3>Oyuncu profili ve ilerleme</h3>
-      <p>Magnet Shift, kaldığınız yerden devam edebilmeniz için seçtiğiniz oyuncu adını ve avatarı, oyun ilerlemenizi, oyun içi bakiyelerinizi ve dil ile ses gibi tercihlerinizi cihazınızda saklar. Android ayarlarınıza bağlı olarak bu kayıtlar cihaz yedeğine dahil edilebilir.</p>
+      <p>Magnet Shift, seçtiğiniz oyuncu adını ve avatarı, oyun ilerlemenizi, oyun içi bakiyelerinizi, Reklamları Kaldır’ı satın alıp almadığınızı ve dil ile ses gibi tercihlerinizi cihazınızda saklar. Bu kayıtlar cihazınızda kalır, Yui Games’e gönderilmez. Android ayarlarınıza bağlı olarak cihaz yedeğine dahil edilebilir.</p>
 
       <h3>Reklamlar</h3>
-      <p>Magnet Shift, isteğe bağlı ödüllü reklamlar ve bölümler arası reklamlar dahil olmak üzere reklam göstermek için Google AdMob’u kullanır. Reklam yazılımı, yaklaşık konumunuzu belirlemek için kullanılabilen IP adresinizi, Android reklam kimliği veya uygulama grubu kimliği gibi tanımlayıcıları, oyun ve reklam etkileşimlerini ve tanılama bilgilerini Google’a ve reklam iş ortaklarına iletebilir. Bu veriler reklam sunmak ve performansını ölçmek, uygun olduğunda reklamları kişiselleştirmek ve sahtekârlığı önlemek için kullanılır. Reklam yazılımı verileri aktarım sırasında şifreler.</p>
-      <p>Gerektiğinde reklamlarla ilgili izin seçeneklerini göstermek için Google Kullanıcı Mesajlaşma Platformu’nu (UMP) kullanıyoruz. Reklam kimliğinizi Android ayarlarından da yönetebilirsiniz.</p>
+      <p>Magnet Shift, isteğe bağlı ödüllü reklamlar ve bölümler arası reklamlar dahil olmak üzere reklam göstermek için Google AdMob’u kullanır. Reklam yazılımı, yaklaşık konumunuzu belirlemek için kullanılabilen IP adresinizi, Android reklam kimliği veya uygulama grubu kimliği gibi tanımlayıcıları, oyun ve reklam etkileşimlerini, kilitlenme kayıtlarını ve tanılama bilgilerini Google’a ve reklam iş ortaklarına iletebilir. Bu veriler reklam sunmak ve performansını ölçmek, uygun olduğunda reklamları kişiselleştirmek ve sahtekârlığı önlemek için kullanılır. Reklam yazılımı verileri aktarım sırasında şifreler.</p>
+      <p>Gerektiğinde reklamlarla ilgili izin seçeneklerini göstermek için Google Kullanıcı Mesajlaşma Platformu’nu (UMP) kullanıyoruz. Reklam kimliğinizi Android ayarlarından sıfırlayabilir veya silebilirsiniz.</p>
       <p class="links"><a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google’ın uygulamalardan gelen bilgileri kullanımı</a> · <a href="https://policies.google.com/technologies/retention?hl=tr">Google’ın veri saklama uygulamaları</a></p>
 
-      <h3>Oyun içi satın almalar</h3>
-      <p>Oyun içi somun paketlerinin ödemelerini Google Play işler. Yui Games kart veya banka hesabı bilgilerinizi almaz. Oyun, ürün, adet, işlem kimliği ve makbuz veya satın alma jetonu gibi satın alma bilgilerini Google Play’den alır. Bu bilgileri satın almayı doğrulamak, satın alınan içeriği oyuncuya vermek, aynı işlemin iki kez işlenmesini önlemek ve işlem sorunlarını çözmek için kullanırız.</p>
-      <p>Oyun satın alma işlemlerinde Unity In-App Purchasing’i kullanır. Satın alma akışı çalıştığında Unity, hizmeti yürütmek ve gelir raporları oluşturmak için ürün ve işlem bilgilerini, uygulama ve cihaz tanımlayıcılarını, cihaz ve işletim sistemi bilgilerini ve IP adresinden tahmin edilen ülkeyi işleyebilir. Unity, topladığı verileri aktarım sırasında şifreler.</p>
-      <p class="links"><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> · <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview" hreflang="en">Unity In-App Purchasing gizlilik bilgileri (İngilizce)</a></p>
+      <h3>Uygulama içi satın alma: Reklamları Kaldır</h3>
+      <p>Bölümler arasında gösterilen reklamları kapatmak için Reklamları Kaldır’ı bir kez satın alabilirsiniz. Ödüllü reklamlar, izleyip izlememek size bağlı olduğu için kullanılabilir kalır. Ödemeyi Google Play işler; Yui Games kart veya banka hesabı bilgilerinizi almaz. Oyun, Google hesabınızın Reklamları Kaldır’a sahip olup olmadığını cihazınızda Google Play’e sorar; bu sayede oyunu yeniden yüklediğinizde satın alma geri gelir. Google Play satın almayı iade eder veya iptal ederse bölümler arası reklamlar geri gelir.</p>
+      <p>Oyun, satın alma akışında Unity In-App Purchasing’i kullanır. Unity, satın alma hizmetini yürütmek ve analiz amacıyla yaklaşık konumunuzu (ülke), uygulama ve cihaz tanımlayıcılarını, satın alma geçmişini, kilitlenme kayıtlarını, tanılama ve performans bilgilerini işleyebilir. Unity bu verileri reklam amacıyla üçüncü taraflarla paylaşmaz ve aktarım sırasında şifreler.</p>
+      <p class="links"><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> · <a href="https://docs.unity.com/en-us/iap/privacy-and-consent/overview" hreflang="en">Unity In-App Purchasing gizlilik bilgileri (İngilizce)</a> · <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" hreflang="en">Unity Gizlilik Politikası (İngilizce)</a></p>
 
-      <h3>Destek ve gizlilik talepleri</h3>
-      <p>Bize e-posta gönderdiğinizde Yui Games, e-posta adresinizi, mesajınızı ve paylaşmayı seçtiğiniz bilgileri size yanıt vermek ve talebinizi çözmek için kullanır. Verileriniz hakkında bilgi almak veya geçerli olduğu durumlarda erişim, düzeltme ya da silme talebinde bulunmak için aynı adrese yazabilirsiniz.</p>
-      <p><a href="mailto:yui.games.dev@gmail.com">yui.games.dev@gmail.com</a></p>
+      <h3>Çocuklar</h3>
+      <p>Magnet Shift her yaştan oyuncu için uygundur ancak özellikle 13 yaşın altındaki çocuklar için tasarlanmamıştır.</p>
+
+      <section id="destek" aria-labelledby="destek-baslik">
+        <h3 id="destek-baslik">Destek ve gizlilik talepleri</h3>
+        <p>Oyunla veya bir satın almayla ilgili yardım almak ya da verileriniz hakkında soru sormak için bize e-posta gönderin. Yui Games e-posta adresinizi, mesajınızı ve paylaşmayı seçtiğiniz bilgileri yalnızca size yanıt vermek ve talebinizi çözmek için kullanır.</p>
+        <p><a href="mailto:yui.games.dev@gmail.com?subject=Magnet%20Shift">yui.games.dev@gmail.com</a></p>
+      </section>
 
       <h3>Saklama ve silme</h3>
-      <p>Yerel oyun kayıtları, Android ayarlarından Magnet Shift’in uygulama verilerini temizleyene veya oyunu kaldırana kadar cihazınızda kalır. Bu işlemler ilerlemenizi ve bakiyelerinizi silebilir. Varsa cihaz yedeklerinizi Android ayarlarından ayrıca yönetebilirsiniz.</p>
-      <p>Satın alma kayıtlarını işlemleri doğrulamak, aynı işlemin iki kez işlenmesini önlemek, iade ve uyuşmazlıkları çözmek ve geçerli kayıt saklama yükümlülüklerini yerine getirmek için gereken süre boyunca saklarız. Destek yazışmalarını talep ve takibi için gerekli süre boyunca, kanun gerektiriyorsa daha uzun süre saklarız. Google ve Unity kendi ellerindeki verileri kendi saklama politikalarına göre yönetir. Yui Games’in elindeki kayıtlar için yukarıdaki adrese silme talebi gönderebilirsiniz.</p>
+      <p>Yerel oyun kayıtları, Android ayarlarından Magnet Shift’in uygulama verilerini temizleyene veya oyunu kaldırana kadar cihazınızda kalır. Bu işlem ilerlemenizi ve ayarlarınızı siler; Reklamları Kaldır satın alması Google Play tarafından geri yüklenir. Cihaz yedeklerinizi Android ayarlarından yönetebilirsiniz. Google ve Unity işledikleri verileri kendi saklama politikalarına göre tutar; yukarıdaki bağlantılardan silme talebinde bulunabilirsiniz. Destek e-postalarını yalnızca talebinizi çözmek için gereken süre boyunca, kanun gerektiriyorsa daha uzun süre saklarız ve silinmelerini isteyebilirsiniz.</p>
+
+      <h3>Değişiklikler</h3>
+      <p>Oyun ileride bilgileri farklı şekilde toplamaya veya kullanmaya başlarsa (örneğin isteğe bağlı giriş eklenirse), o sürüm yayınlanmadan önce bu politikayı ve yukarıdaki tarihi güncelleriz.</p>
     </article>
   </main>
 </body>
